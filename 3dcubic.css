@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: white;
+    perspective: 1000px;
+}
+.cube{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: myanimation 5s infinite linear;
+}
+@keyframes myanimation {
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+.face{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    /* background-image: radial-gradient(black,rgba(0, 255, 255, 0.648),black); */
+    border: 2px solid white;
+    /* box-shadow: 0px 0px 5px 5px silver; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+}
+.face .child{
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.left{
+    background-color: blue;
+    transform: rotateY(90deg) translateZ(100px);
+}
+.right{
+    background-color: red;
+    transform: rotateY(90deg) translateZ(-100px);
+}
+.top{
+    background-color: yellow;
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom{
+    background-color: green;
+    transform: rotateX(90deg) translateZ(-100px);
+}
+.front{
+    background-color: brown;
+    transform: translateZ(100px);
+}
+.back{
+    background-color: black;
+    transform: translateZ(-100px);
+}

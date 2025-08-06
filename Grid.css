@@ -1,0 +1,33 @@
+.parent{
+    width: 500px;
+    height: 500%;
+    border: 2px solid black;
+    display: flex;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+.child1{
+    width: 200px;
+    height: 150px;
+    background-color: red;
+}
+.child2{
+    width: 200px;
+    height: 150px;
+    background-color: rebeccapurple;
+}
+.child3{
+    width: 200px;
+    height: 150px;
+    background-color: greenyellow;
+}
+.child4{
+    width: 200px;
+    height: 150px;
+    background-color: orange;
+}
+.child5{
+    width: 200px;
+    height: 150px;
+    background-color: magenta;
+}

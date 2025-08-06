@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Art Gallery</title>
+  <style>
+    :root {
+      --bg: #121212;
+      --card-bg: #1f1f1f;
+      --neon: #ff6ec4;
+      --highlight: #f093fb;
+      --shadow: rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, var(--neon), var(--highlight));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 20px var(--shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 25px rgba(255, 110, 196, 0.3);
+    }
+
+    .art {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    /* ===== CSS Art 1: Glowing Circle ===== */
+    .circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--neon), transparent 70%);
+      box-shadow: 0 0 30px var(--neon), 0 0 60px var(--highlight);
+      animation: pulse 3s ease-in-out infinite;
+    }
+
+    /* ===== CSS Art 2: Triangle Mountain ===== */
+    .mountain {
+      width: 0;
+      height: 0;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+      border-bottom: 150px solid var(--highlight);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    /* ===== CSS Art 3: Rotating Square ===== */
+    .square {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--neon), var(--highlight));
+      animation: spin 6s linear infinite;
+      box-shadow: inset 0 0 20px rgba(255,255,255,0.2), 0 0 20px var(--neon);
+    }
+
+    /* ===== CSS Art 4: Spiral Dot Grid ===== */
+    .dots {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .dots::before, .dots::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: var(--neon);
+      border-radius: 50%;
+      animation: rotate 5s linear infinite;
+    }
+
+    .dots::before {
+      top: 0;
+      left: 50%;
+      transform-origin: center 75px;
+    }
+
+    .dots::after {
+      bottom: 0;
+      left: 50%;
+      transform-origin: center -75px;
+    }
+
+    /* ===== Titles & Text ===== */
+    .title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, var(--neon), var(--highlight));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      color: #ccc;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Art Gallery</h1>
+
+  <div class="gallery">
+    <div class="card">
+      <div class="art"><div class="circle"></div></div>
+      <div class="title">Glowing Circle</div>
+      <div class="desc">A neon ring made entirely with gradients and shadows.</div>
+    </div>
+
+    <div class="card">
+      <div class="art"><div class="mountain"></div></div>
+      <div class="title">Geometric Mountain</div>
+      <div class="desc">A crisp triangle mountain with float animation.</div>
+    </div>
+
+    <div class="card">
+      <div class="art"><div class="square"></div></div>
+      <div class="title">Rotating Square</div>
+      <div class="desc">A spinning square with gradient light effects.</div>
+    </div>
+
+    <div class="card">
+      <div class="art"><div class="dots"></div></div>
+      <div class="title">Orbiting Dots</div>
+      <div class="desc">Minimal orbiting dots — subtle and smooth motion.</div>
+    </div>
+  </div>
+
+</body>
+</html>

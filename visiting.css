@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(11, 11, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  box-shadow: 0 10px 50px green;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-section {
+  width: 60%;
+  background: rgb(11, 11, 62);
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+.contact-info {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.contact-info h2 span {
+  font-weight: 400;
+  color: #ffb703;
+}
+
+.contact-info .title {
+  font-size: 13px;
+  margin-bottom: 18px;
+  color: #bbb;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.contact-info ul li {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info ul li i {
+  color: #ffb703;
+}
+
+.right-section {
+  width: 40%;
+  background:  rgb(11, 11, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 40px 40px red;
+}
+
+.logo i {
+  font-size: 40px;
+  color: #b87333;
+  margin-bottom: 10px;
+}
+
+.logo h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.logo p {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}

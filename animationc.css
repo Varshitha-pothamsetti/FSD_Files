@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.demo{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(244, 244, 105);
+    border-radius: 75px;
+    animation: Myanimation 3s linear infinite;
+    /* animation-name: Myanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate; */
+    /* animation-delay: 5s; */
+    /* animation: Myanimation 3s ease-in 1s infinite alternate; */
+}
+/* .demo1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    animation-name: Myanimation;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+.demo2{
+    width: 150px;
+    height: 150px;
+    background-color: mediumseagreen;
+    animation-name: Myanimation;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.demo3{
+    width: 150px;
+    height: 150px;
+    background-color: magenta;
+    animation-name: Myanimation;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+} */
+
+
+@keyframes Myanimation{
+    /* from{
+        background-color: blueviolet;
+    }
+    to{
+        background-color: red;
+    /* } */
+    /* from{
+        background-color: black;
+        left: 0px;
+        border-radius: 0px;
+    }
+    to{
+        background-color: palevioletred;
+        left: 400px;
+        border-radius: 75px;
+    /* } */
+     /* 0%{
+        background-color: black;
+     }
+     20%{
+        background-color: blue;
+     }
+     60%{
+        background-color: yellow;
+     }
+     100%{
+        background-color: darkmagenta;
+     } */ 
+      0%{
+        box-shadow: 0px 0px 10px 10px orange;
+      }
+      50%{
+        box-shadow: 0px 0px 30px 30px orange;
+      }
+      70%{
+        box-shadow: 0px 0px 30px 30px rgb(229, 130, 130);
+      }
+      100%{
+        box-shadow: 0px 0px 30px 30px rgb(226, 67, 67);
+      }
+} 

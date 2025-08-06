@@ -1,0 +1,20 @@
+body{
+    width: 200%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: justify;
+}
+.demo{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+@media(max-width:600px){
+    .demo{
+        display: block;
+    }
+}

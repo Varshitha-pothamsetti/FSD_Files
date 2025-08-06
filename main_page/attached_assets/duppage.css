@@ -1,0 +1,19 @@
+body{
+    padding: 20px;
+}
+.header{
+    width: 100%;
+    height: 200px;
+}
+.logo1{
+    border-radius: 7px;
+}
+.heading{
+    font-size: 20px;
+    color: red;
+    text-align: left;
+}
+.navbar-center{
+    display: flex;
+    left: 50px;
+}

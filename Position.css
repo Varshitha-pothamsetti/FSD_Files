@@ -1,0 +1,50 @@
+.parent1{
+    width: 100%;
+    height: 300px;
+    background-color: mediumvioletred;
+}
+.parent2{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(239, 167, 32);
+    border: 3px solid black;
+    position: sticky;
+    top: 0px;
+}
+/* .child1{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    position: sticky;
+    right: 30px;
+    bottom: 30px;
+} */
+/* this extra two child's for absolute */
+/* .child2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(10, 10, 217);
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+.child3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(86, 237, 86);
+} */
+.parent3{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(235, 123, 235);
+}
+.parent4{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(17, 231, 231);;
+}
+.parent5{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(87, 3, 87);
+}

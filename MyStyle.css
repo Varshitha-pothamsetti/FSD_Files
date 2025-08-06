@@ -1,0 +1,106 @@
+/* .first{
+    font-size: 12px;
+}
+.second{
+    font-size: 12pt;
+} */
+
+/* .firstimage{
+    width: 100pt;
+}
+.secondimage{
+    width: 200pt;
+}
+.thirdimage{
+    width: 300pt;
+} */
+
+/* .heading{
+    border-width: 5px;
+    border-color: rebeccapurple;
+    border-style: groove;
+} */
+ /* .heading{ */
+    /* border-top: 4px;
+    border-top-color: midnightblue;
+    border-top-style: solid ;
+
+    border-right: 3px;
+    border-right-color: mediumvioletred;
+    border-right-style: dotted;
+
+    border-bottom: 6px;
+    border-bottom-color: rebeccapurple;
+    border-bottom-style: groove;
+
+    border-left: 5px;
+    border-left-color: red;
+    border-left-style: dashed; */
+
+    /* border-radius: 10%;
+    border: 5px solid maroon;
+ } */
+/* 
+.box{
+    border-radius: 100px;
+    height: 100px;
+    border: 3px solid magenta;
+    border-top-left-radius: 30px;
+} */
+/* 
+.parent{
+    width: 100%;
+    height: 100px;
+    border: 5px solid magenta;
+}
+.child{
+    width: 100%;
+    height: 50px;
+    border: 3px solid red;
+} */
+
+.parent {
+  width: 400px;
+  height: 400px;
+  border: 5px solid magenta;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+  background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

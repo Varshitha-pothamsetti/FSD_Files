@@ -1,0 +1,122 @@
+/* RGB COLOURS */
+/* .para-1{ 
+    color: rgba(255, 0, 0, 1);
+}
+.para-2{
+    color: rgba(255, 0, 0, 0.5);
+}
+.para-3{
+    color: rgba(255,0, 0, 0.4);
+}
+.para-4{
+    color: rgba(255,0, 0, 0.3);
+}
+
+ /*Hexa Decimal Colours */
+ /* .para-5{
+    color: #006400;
+ }
+ .para-6{
+    color: #90ee90;
+ }
+ .para-7{
+    color: #32cd32;
+ }
+ .para-8{
+    color: #98ff98;
+ } 
+     
+ /* HSL colours*/
+ /* .para-9{
+    color: hsl(300, 100%, 50%);
+ }
+ .para-10{
+    color: hsl(330, 100%, 60%);
+ }
+ .para-11{
+    color: hsl(330, 96%, 41%);
+ }
+ .para-12{
+    color: hsl(330, 61%, 23%);
+ }  */
+
+ /* TEXT ALIGNMENT */
+ .para-1{
+    text-align: center;
+    color: palevioletred;
+    text-decoration-color: orchid ;
+ }
+ .para-2{
+    text-align: justify;
+    text-decoration-style: dotted ;
+ }
+ .para-3{
+    text-align: left;
+ }
+ .para-4{
+    text-align-last: justify;
+ }
+ .para-5{
+    /* text-align-last: right; */
+    direction: rtl;
+ }
+ .para-10{
+    /* text-align-last: right; */
+    direction: ltr;
+ }
+
+ /* TEXT DECORATION */
+ .para-6{
+    text-decoration-line: underline;
+    text-decoration-color: purple ;
+ }
+ .para-7{
+    text-decoration-line: overline;
+    text-decoration-color: green;
+    text-decoration: underline #ff0000 ;
+    text-decoration-style: dashed ;
+    text-decoration-thickness: 5px;
+ }
+ .para-2{
+    text-decoration-line: line-through;
+    text-decoration-color: orange;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 4px ;
+ }
+ .para-3{
+    text-decoration-line: underline overline line-through;
+    text-decoration-color: #555fff;
+    text-decoration-style: double ;
+    text-decoration-thickness: 2px;
+ }
+ .para-1{
+    /* text-decoration-style: dotted ; */
+    text-decoration-thickness: 4px ;
+    text-decoration: underline magenta dashed 4px;
+ }
+ .para-9{
+    text-decoration-thickness: 4px ;
+    text-decoration: underline tomato dotted 4px;
+
+    /* text transformation */
+    text-transform: lowercase;
+ }
+ .para-0{
+   text-transform: capitalize;
+
+   /* TEXT SPACING */
+   letter-spacing: 4px;
+ }
+ .para-8{
+   color: blueviolet;
+   word-spacing: 15px;
+   line-height: 40px;
+   text-indent: 100px;
+ }
+/* TEXT SHADOW */
+.text-shadow{
+   text-shadow: 2px 2px purple;
+}
+h1{
+   text-shadow: 1px 2px 4px rgba(255, , , 0.1);
+}

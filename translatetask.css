@@ -1,0 +1,67 @@
+body {
+      margin: 0;
+      background: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: 300px;
+      background: white;
+      transform: translate(-50%, -50%);
+      border: 2px solid black;
+      overflow: visible;
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),  /* outer shadow */
+        inset 60px 0 80px rgba(0, 0, 0, 0.15),
+        inset -60px 0 80px rgba(0, 0, 0, 0.15),
+        inset 0 60px 80px rgba(0, 0, 0, 0.15),
+        inset 0 -60px 80px rgba(0, 0, 0, 0.15),
+        inset 0 0 40px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Common line style */
+    .line {
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background: black;
+      transform-origin: top left;
+      box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    .line.top-left {
+      top: calc(50% - 150px);
+      left: calc(50% - 150px);
+      transform: rotate(110deg);
+    }
+
+    .line.top-right {
+      top: calc(50% - 150px);
+      left: calc(50% + 150px);
+      transform: rotate(250deg);
+    }
+
+    .line.bottom-left {
+      top: calc(50% + 150px);
+      left: calc(50% - 150px);
+      transform: rotate(71deg);
+    }
+
+    .line.bottom-right {
+      top: calc(50% + 150px);
+      left: calc(50% + 150px);
+      transform: rotate(-71deg);
+    }

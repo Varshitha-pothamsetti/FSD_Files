@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple To-Do UI</title>
+  <style>
+    body {
+      background: #f7f7f7;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .todo-container {
+      background: #fff;
+      padding: 30px 25px;
+      width: 320px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .todo-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    .todo-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .todo-item input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    .todo-item label {
+      font-size: 16px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="todo-container">
+    <h2>📝 My To-Do List</h2>
+    <div class="todo-item">
+      <input type="checkbox" id="task1" />
+      <label for="task1">Finish HTML project</label>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox" id="task2" />
+      <label for="task2">Practice DSA problems</label>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox" id="task3" />
+      <label for="task3">Submit internship report</label>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox" id="task4" />
+      <label for="task4">Read about SQL joins</label>
+    </div>
+  </div>
+
+</body>
+</html>

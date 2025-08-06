@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileOptions</title>
+    <link rel="stylesheet" href="MenuTask.css"/>
+</head>
+<body>
+    <span onclick="Open()">&#9776;</span>
+    <div class="mobile-options">
+        <span onclick="Close()">&times;</span>
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+        <div>Pricing</div>
+        <div>Services</div>
+    </div>
+    <script>
+      function Close(){
+        document.getElementsByClassName("mobile-options")[0].style= "left:-200px";
+      }
+      function Open(){
+         document.getElementsByClassName("mobile-options")[0].style= "left:0px";
+      }
+    </script>
+</body>
+</html>

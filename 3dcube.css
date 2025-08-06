@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    perspective: 1000px;
+}
+.cube{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: myanimation 15s linear;
+    transform-style: preserve-3d;
+}
+@keyframes myanimation {
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+    
+}
+.cube div{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 2px solid black;
+    background-image: radial-gradient(black,rgb(42, 134, 226), black);
+}
+.left{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.right{
+    transform: rotateY(90deg) translateZ(-100px)
+}
+.top{
+    transform: rotateX(90deg) translateZ(100px)
+}
+.down{
+    transform: rotateX(90deg) translateZ(-100px)
+}
+.front{
+    transform: translateZ(100px)
+}
+.back{
+    transform: translateZ(-100px)
+}

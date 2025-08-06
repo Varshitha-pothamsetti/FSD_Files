@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satya Varshitha | Animated Timeline Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f0c29;
+      --bg-gradient: linear-gradient(to right, #302b63, #24243e);
+      --accent: #ff6ec4;
+      --text: #ffffff;
+      --glass: rgba(255, 255, 255, 0.07);
+      --blur: 10px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: #121212;
+      background-clip: text;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ff6ec4, #7873f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeSlideDown 1s ease-out forwards;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #aaa;
+      margin-top: 10px;
+      animation: fadeSlideUp 1s ease-out forwards;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to bottom, #ff6ec4, #7873f5);
+      transform: translateX(-50%);
+      z-index: 0;
+      animation: slideFade 1s ease-out forwards;
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 30px;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+      animation-name: slideLeft;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      text-align: left;
+      animation-name: slideRight;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 50%;
+      border: 5px solid #ff6ec4;
+      z-index: 2;
+    }
+
+    .timeline-item:nth-child(odd)::before {
+      right: -10px;
+    }
+
+    .timeline-item:nth-child(even)::before {
+      left: -10px;
+    }
+
+    .card {
+      background: var(--glass);
+      backdrop-filter: blur(var(--blur));
+      border-radius: 15px;
+      padding: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 15px 30px rgba(255, 110, 196, 0.2);
+    }
+
+    .year {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ff94d6;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #ff6ec4, #7873f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideLeft {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideRight {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeSlideDown {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeSlideUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideFade {
+      from {
+        height: 0;
+        opacity: 0;
+      }
+      to {
+        height: 100%;
+        opacity: 1;
+      }
+    }
+
+    /* Delay */
+    .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+    .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+    .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+    .timeline-item:nth-child(4) { animation-delay: 0.8s; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 10px;
+      }
+
+      .timeline-item,
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 40px;
+        text-align: left;
+      }
+
+      .timeline-item::before {
+        left: 0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SATYA VARSHITHA</h1>
+    <p>Frontend Developer | Skill Up Coder | Lifelong Learner</p>
+  </header>
+
+  <section class="timeline">
+    <div class="timeline-item">
+      <div class="card">
+        <div class="year">2019-2020</div>
+        <h3>SSC At Satyam</h3>
+        <p>Completed my SSC at Satyam (E.M) School with 578/600 Marks.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="card">
+        <div class="year">2021-2023</div>
+        <h3>Intermediate at Modern Junior College</h3>
+        <p>Completed my Inter at Modern college with 728/1000 .</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="card">
+        <div class="year">2023-2024</div>
+        <h3>Engineering journey</h3>
+        <p>Developed dynamic interfaces with HTML, CSS & JS. Learned real-world teamwork and agile workflow.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="card">
+        <div class="year">2025</div>
+        <h3>Portfolio Launched</h3>
+        <p>Built and deployed my first personal portfolio. Added theme switching and responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

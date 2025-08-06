@@ -1,0 +1,170 @@
+
+body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      box-shadow: 0px 0px 5px 2px blue;
+    }
+    .character {
+      position: relative;
+      width: 120px;
+    }
+    .head {
+      background: #e19b5c;
+      width: 100px;
+      height: 100px;
+      border-radius: 30px;
+      position: relative;
+      margin: auto;
+    }
+    .eye {
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 5px;
+      position: absolute;
+      top: 30px;
+    }
+    .eye.left { left: 20px; }
+    .eye.right { right: 20px; }
+    .pupil {
+      width: 10px;
+      height: 10px;
+      background: black;
+      border-radius: 50%;
+      margin: 5px;
+    }
+    .mouth {
+      width: 50px;
+      height: 10px;
+      background: black;
+      border-radius: 0 0 50px 50px;
+      position: absolute;
+      bottom: 15px;
+      left: 25px;
+    }
+    .ear {
+      width: 15px;
+      height: 25px;
+      background: #e19b5c;
+      position: absolute;
+      top: 30px;
+      border-radius: 50%;
+    }
+    .ear.left { left: -15px; }
+    .ear.right { right: -15px; }
+
+    .hat {
+      width: 110px;
+      height: 30px;
+      background: black;
+      position: absolute;
+      top: -30px;
+      left: -5px;
+      border-radius: 50% 50% 0 0;
+      box-shadow: 0px 0px 5px 2px black;
+    }
+
+    .body {
+      width: 80px;
+      height: 100px;
+      background: navy;
+      margin: auto;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0px 0px 5px 2px blue;
+    }
+
+    .button {
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      left: 36px;
+    }
+    .button:nth-child(1) { top: 25px; }
+    .button:nth-child(2) { top: 45px; }
+
+    .belt {
+      width: 80px;
+      height: 30px;
+      background: brown;
+      position: absolute;
+      bottom: 0;
+    }
+  .arm {
+    width: 24px;
+    height: 80px;
+    background: #e19b5c;
+    position: absolute;
+    top: 110px;
+    border-radius: 12px;
+}
+
+  .arm.left {
+    left: -3px;
+}
+
+  .arm.right {
+    right: -4px;
+}
+    .finger {
+      width: 6px;
+      height: 10px;
+      background: #e19b5c;
+      border-radius: 3px;
+      position: absolute;
+      bottom: -10px;
+    }
+    .finger.left { left: 2px; }
+    .finger.right { right: 2px; }
+    .finger1 {
+      width: 6px;
+      height: 10px;
+      background: #e19b5c;
+      border-radius: 3px;
+      position: absolute;
+      bottom: -10px;
+    }
+    .finger1.left { left: 13px; }
+    .finger1.right { right: 13px; }
+
+    .legs {
+      display: flex;
+      justify-content: space-between;
+      width: 60px;
+      margin: auto;
+      margin-top: 10px;
+    }
+    .leg {
+      width: 20px;
+      height: 60px;
+      background: #e19b5c;
+      border-radius: 5px;
+      position: relative;
+    }
+    .sock {
+      width: 20px;
+      height: 5px;
+      background: white;
+      position: absolute;
+      bottom: 10px;
+    }
+    .shoe {
+      width: 20px;
+      height: 10px;
+      background: black;
+      position: absolute;
+      bottom: 0;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0px 0px 5px black;
+    }
+    .hair{
+      width: 90px;
+      height: 60px;
+      background-color: black;
+    }
+ 
